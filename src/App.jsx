@@ -47,7 +47,7 @@ function App() {
       formData.append("file", data.image);
       formData.append("model_name", data.model);
 
-      const res = await fetch("https://asd-backend-9gt5.onrender.com/predict/", {
+      const res = await fetch("http://127.0.0.1:8000/predict/", {
         method: "POST",
         body: formData,
       });
